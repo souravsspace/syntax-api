@@ -26,7 +26,14 @@ export const create = createRoute({
   responses: {
     [httpStatusCodes.OK]: jsonContent(insertTaskSchema, "The created task"),
     [httpStatusCodes.UNPROCESSABLE_ENTITY]: jsonContent(
-      createErrorSchema(),
+      // createErrorSchema(),
+      z.object({
+        success: z.boolean(),
+        error: z.object({
+          message: z.string(),
+          path: z.string(),
+        }),
+      }),
       "The task is invalid",
     ),
   },
