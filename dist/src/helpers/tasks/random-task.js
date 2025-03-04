@@ -1,4 +1,4 @@
-import { createRandomId, getRandomWords, randomAnimalName } from "@/lib/utils";
+import { createRandomId, getRandomWords, randomAnimalName } from "../../lib/utils.js";
 export function getRandomTasks(count) {
     return Array.from({ length: count }, () => ({
         id: createRandomId(),

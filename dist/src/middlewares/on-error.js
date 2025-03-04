@@ -1,4 +1,4 @@
-import { INTERNAL_SERVER_ERROR, OK } from "@/status/http-status-codes";
+import { INTERNAL_SERVER_ERROR, OK } from "../status/http-status-codes.js";
 const onError = (err, c) => {
     const currentStatus = "status" in err
         ? err.status

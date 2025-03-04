@@ -1,4 +1,4 @@
-import oneOf from "@/helpers/open-api/one-of";
+import oneOf from "../../helpers/open-api/one-of.js";
 function jsonContentOneOf(schemas, description) {
     return {
         content: {

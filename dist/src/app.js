@@ -1,12 +1,12 @@
-import { configureOpenAPI } from "@/lib/configure-open-api";
-import { createApp } from "@/lib/create-app";
+import { configureOpenAPI } from "./lib/configure-open-api.js";
+import { createApp } from "./lib/create-app.js";
 /**
  * @routes
  *
  * Here you can define routes which are the main entry point for your API.
  */
-import indexRouter from "@/routes/index.route";
-import tasksRouter from "@/routes/tasks/tasks.index";
+import indexRouter from "./routes/index.route.js";
+import tasksRouter from "./routes/tasks/tasks.index.js";
 const app = createApp();
 const routes = [
     indexRouter,

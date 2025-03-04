@@ -1,4 +1,4 @@
-import env from "@/env";
+import env from "../env.js";
 import { pinoLogger as logger } from "hono-pino";
 import pino from "pino";
 import { PinoPretty as pretty } from "pino-pretty";

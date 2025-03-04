@@ -1,6 +1,6 @@
-import { db } from "@/database";
+import { db } from "../database/index.js";
 import { sql } from "drizzle-orm";
-import { confirmDeletion } from "@/scripts/utils";
+import { confirmDeletion } from "../scripts/utils.js";
 async function init() {
     const warnText = "Database";
     try {

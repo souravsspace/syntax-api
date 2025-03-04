@@ -1,4 +1,4 @@
-import { UNPROCESSABLE_ENTITY } from "@/status/http-status-codes";
+import { UNPROCESSABLE_ENTITY } from "../../status/http-status-codes.js";
 export const defaultHook = (result, c) => {
     if (!result.success) {
         return c.json({
