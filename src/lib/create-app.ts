@@ -1,3 +1,5 @@
+import type { AppOpenAPI } from "@/types/app-type";
+
 import { createRouter } from "@/lib/create-router";
 import notFound from "@/middlewares/not-found";
 import onError from "@/middlewares/on-error";
@@ -16,4 +18,8 @@ export function createApp() {
   app.onError(onError);
 
   return app;
+}
+
+export function createTestApp(router: AppOpenAPI) {
+  return createRouter().route("/", router);
 }
