@@ -1,5 +1,5 @@
 import { apiReference } from "@scalar/hono-api-reference";
-import packageJson from "../../package.json";
+import packageJson from "../../package.json" assert { type: "json" };
 export function configureOpenAPI(app) {
     app.doc("/docs", {
         openapi: "3.1.0",
